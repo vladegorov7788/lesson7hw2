@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class RegistrationTest extends BaseUI {
 
     @Test
-    public void testregistration() {
+    public void testRegistration() {
         driver.findElement(Locators.BUTTON_REGISTRATION).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);

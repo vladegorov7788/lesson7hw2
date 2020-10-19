@@ -7,12 +7,14 @@ import java.util.concurrent.TimeUnit;
 
 public class MainPageTests extends BaseUI {
 
-        @Test
-        public void mainpagetests() {
-            driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-            WebElement ele = driver.findElement(Locators.LINK_YOUTUBE);
+    @Test
+    public void mainPageTests() {
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        WebElement ele = driver.findElement(Locators.LINK_YOUTUBE);
+        driver.switchTo().frame(ele);
+        driver.findElement(By.xpath("//button[@class='ytp-large-play-button ytp-button']")).click();
 
-            driver.findElement(By.xpath("//button[@class='ytp-large-play-button ytp-button']")).click();
+        //   driver.switchTo().frame("fm");
 
-        }
     }
+}

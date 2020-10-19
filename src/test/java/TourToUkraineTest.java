@@ -7,7 +7,7 @@ public class TourToUkraineTest extends BaseUI {
 
 
     @Test
-    public void testtourtoukraine() {
+    public void testTourToUkraine() {
         driver.findElement(Locators.LINK_TOUR_TO_UKRAINE).click();
         currentUrlTourToUkraine = driver.getCurrentUrl();
         System.out.println(currentUrlTourToUkraine);

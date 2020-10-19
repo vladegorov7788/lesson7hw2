@@ -10,7 +10,7 @@ public class HowWeWorkTest extends BaseUI {
 
 
     @Test
-    public void testhowwework() {
+    public void testHowWeWork() {
         driver.findElement(Locators.LINK_HOW_WE_WORK).click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 

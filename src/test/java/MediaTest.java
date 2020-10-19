@@ -8,7 +8,7 @@ public class MediaTest extends BaseUI {
 
 
     @Test
-    public void mediapage() {
+    public void mediaPage() {
         driver.findElement(Locators.LINK_MEDIA).click();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         currentUrlMedia = driver.getCurrentUrl();
@@ -18,7 +18,7 @@ public class MediaTest extends BaseUI {
     }
 
     @Test
-    public void mediapage2() {
+    public void mediaPage2() {
         driver.findElement(Locators.LINK_PHOTOS).click();
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         currentUrlMedia = driver.getCurrentUrl();

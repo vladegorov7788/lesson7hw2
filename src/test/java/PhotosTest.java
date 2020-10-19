@@ -11,7 +11,7 @@ public class PhotosTest extends BaseUI {
 
 
     @Test
-    public void testphotos() {
+    public void testPhotos() {
         driver.findElement(Locators.LINK_PHOTOS).click();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         currentUrlPhotos = driver.getCurrentUrl();

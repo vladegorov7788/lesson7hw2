@@ -10,7 +10,7 @@ public class GiftsTest extends BaseUI {
 
 
     @Test
-    public void testgliftsflowers() {
+    public void testGliftsFlowers() {
         driver.findElement(Locators.LINK_GIFTS).click();
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         currentUrlGifts = driver.getCurrentUrl();
@@ -23,7 +23,7 @@ public class GiftsTest extends BaseUI {
 
     }
     @Test
-    public void testgiftsspa() {
+    public void testGiftsSpa() {
         driver.findElement(Locators.LINK_GIFTS).click();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         currentUrlGifts = driver.getCurrentUrl();
@@ -37,7 +37,7 @@ public class GiftsTest extends BaseUI {
 
     }
     @Test
-    public void testgiftsteddyear() {
+    public void testGiftsTeddyBear() {
         driver.findElement(Locators.LINK_GIFTS).click();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         currentUrlGifts = driver.getCurrentUrl();

@@ -15,7 +15,7 @@ public class BaseUI {
     String mainUrl = "https://romanceabroad.com/";
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
@@ -23,6 +23,7 @@ public class BaseUI {
         driver.manage().window().maximize();
         driver.get(mainUrl);
     }
+
     @AfterMethod
     public void afterActions() {
 
@@ -30,14 +31,19 @@ public class BaseUI {
 
     }
 
-    public void getDropDownListByIndex (WebElement element, int index){
+    public void getDropDownListByIndex(WebElement element, int index) {
         Select ageDropDown = new Select(element);
         ageDropDown.selectByIndex(index);
     }
-    public void clickByMouse (WebElement element){
-        Actions action=new Actions(driver);
+
+    public void clickByMouse(WebElement element) {
+        Actions action = new Actions(driver);
         action.moveToElement(element).perform();
 
     }
 
+    public static void getDropDownListByValue(WebElement element, String value) {
+        Select select = new Select(element);
+        select.selectByValue(value);
+    }
 }

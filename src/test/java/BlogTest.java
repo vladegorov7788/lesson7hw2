@@ -9,7 +9,7 @@ public class BlogTest extends BaseUI {
 
 
     @Test
-    public void testblog() {
+    public void testBlog() {
         driver.findElement(Locators.LINK_BLOG).click();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         currentUrlBlog = driver.getCurrentUrl();
