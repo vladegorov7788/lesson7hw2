@@ -56,7 +56,7 @@ public class SearchTest extends BaseUI {
         select.selectByValue("date_created");*/
 
         WebElement dropDownListSortBy = driver.findElement(Locators.DROP_DOWN_LIST_SORT_BY);
-    Locators.getDropDownListByText(dropDownListSortBy,"Views");
+    BaseUI.getDropDownListByText(dropDownListSortBy,"Views");
 
 
     }

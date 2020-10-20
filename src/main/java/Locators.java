@@ -51,18 +51,6 @@ public class Locators {
     public static final By LINK_YOUTUBE = By.xpath("//iFrame[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
 
 
-    public static void getDropDownListByIndex (WebElement element, int index){
-        Select select = new Select(element);
-        select.selectByIndex(index);
-    }
-    public static void getDropDownListByText (WebElement element, String text){
-        Select select = new Select(element);
-        select.selectByVisibleText(text);
-    }
-    public static void getDropDownListByValue (WebElement element, String value) {
-        Select select = new Select(element);
-        select.selectByValue(value);
-    }
     }
 
 

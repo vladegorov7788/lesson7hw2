@@ -31,12 +31,12 @@ public class BaseUI {
 
     }
 
-    public void getDropDownListByIndex(WebElement element, int index) {
+    public void getDropDownListByIndex (WebElement element, int index) {
         Select ageDropDown = new Select(element);
         ageDropDown.selectByIndex(index);
     }
 
-    public void clickByMouse(WebElement element) {
+    public void clickByMouse (WebElement element) {
         Actions action = new Actions(driver);
         action.moveToElement(element).perform();
 
@@ -45,5 +45,9 @@ public class BaseUI {
     public static void getDropDownListByValue(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByValue(value);
+    }
+    public static void getDropDownListByText (WebElement element, String text){
+        Select select = new Select(element);
+        select.selectByVisibleText(text);
     }
 }
